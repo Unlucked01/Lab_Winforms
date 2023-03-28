@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms.VisualStyles;
@@ -55,13 +55,13 @@ namespace Lab17_19
                     fixup(A, i);
                     Count++;
                 }
-                PrintArray1(A);
-                PrintArray2(A);
+                PrintFirstTable(A);
+                PrintSecondTable(A);
                 CheckQueue = true;
             }
             else
             {
-                MessageBox.Show("Вы уже создали очередь!");
+                MessageBox.Show("РћС‡РµСЂРµРґСЊ СѓР¶Рµ СЃРѕР·РґР°РЅР°!");
             }
         }
 
@@ -78,10 +78,10 @@ namespace Lab17_19
             }
             else
             {
-                MessageBox.Show("Очередь уже очищена!");
+                MessageBox.Show("РћС‡РµСЂРµРґСЊ СѓР¶Рµ РѕС‡РёС‰РµРЅР°!");
             }
         }
-        private bool PrintArray1(int[] array)
+        private bool PrintFirstTable(int[] array)
         {
             for (int l = 0; l < size; l++)
             {
@@ -93,30 +93,30 @@ namespace Lab17_19
             }
             return true;
         }
-        private void PrintArray2(int[] array)
+        private void PrintSecondTable(int[] array)
         {
-            int position = size / 2;//начальная позиция в строке
-            int i = 0, Rows = 0;//текущая строка в таблице
-            int maxElemInRows = 1;//максимальное кол-во элементов в строке
+            int position = size / 2;
+            int i = 0, Rows = 0;
+            int maxElemInRows = 1;
             while (Rows < dataGridView2.RowCount)
             {
-                int j = 0;//число элементов в текущей строке
-                int firstElemInRows = position;//первый элемент в строке равен позиции элемента в строке
+                int j = 0;
+                int firstElemInRows = position;
                 while (maxElemInRows > j && i < size)
                 {
                     if (array[i] == 0)
                         dataGridView2.Rows[Rows].Cells[firstElemInRows].Value = "";
                     else
-                        dataGridView2.Rows[Rows].Cells[firstElemInRows].Value = array[i++];//вывод во вторую таблицу в виде дерева
-                    firstElemInRows += position * 2 + 2;//переход на след позицию
+                        dataGridView2.Rows[Rows].Cells[firstElemInRows].Value = array[i++];
+                    firstElemInRows += position * 2 + 2;
                     j++;
                 }
-                position /= 2;//уменьшение расстояния в 2 раза
-                maxElemInRows *= 2;//увеличение кол-ва элементов в строке
-                Rows++;//переход на след строку
+                position /= 2;
+                maxElemInRows *= 2;
+                Rows++;
             }
         }
-        private void PrintArray3(int value)
+        private void PrintThirdTable(int value)
         {
             if (dataGridView3 != null && dataGridView3.Rows.Count > 0)
             {
@@ -187,8 +187,8 @@ namespace Lab17_19
                     {
                         A[i] = value;
                         fixup(A, i);
-                        PrintArray1(A);
-                        PrintArray2(A);
+                        PrintFirstTable(A);
+                        PrintSecondTable(A);
                         Count++;
                         return;
                     }
@@ -196,13 +196,13 @@ namespace Lab17_19
                 CheckQueue = true;
                 if (i == 15)
                 {
-                    MessageBox.Show("Вы заполнинил всю очередь!");
+                    MessageBox.Show("РћС‡РµСЂРµРґСЊ Р·Р°РїРѕР»РЅРµРЅР°!");
                     return;
                 }
             }
             else
             {
-                MessageBox.Show("Массив заполнен, добавить элемент невозможно");
+                MessageBox.Show("РњР°СЃСЃРёРІ Р·Р°РїРѕР»РЅРµРЅ, РґРѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚ РЅРµРІРѕР·РјРѕР¶РЅРѕ!");
                 return;
             }
         }
@@ -226,7 +226,7 @@ namespace Lab17_19
             }
             if (index < 0)
             {
-                MessageBox.Show("Значение не найдено");
+                MessageBox.Show("Р—РЅР°С‡РµРЅРёРµ РЅРµ РЅР°Р№РґРµРЅРѕ!");
                 return;
             }
             if (val > valueTo)
@@ -237,20 +237,20 @@ namespace Lab17_19
             {
                 fixup(A, index);
             }
-            PrintArray1(A);
-            PrintArray2(A);
+            PrintFirstTable(A);
+            PrintSecondTable(A);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             if (varible == 15)
             {
-                MessageBox.Show("Очередь выборки заполнена. Операция отклонена");
+                MessageBox.Show("РћС‡РµСЂРµРґСЊ СѓР¶Рµ Р·Р°РїРѕР»РЅРµРЅР°!");
                 return;
             }
             if (Count == 0)
             {
-                MessageBox.Show("Массив пустой. Операция отклонена");
+                MessageBox.Show("РћС‡РµСЂРµРґСЊ РїСѓСЃС‚Р°!");
                 return;
             }
             int value = A[0];
@@ -265,9 +265,9 @@ namespace Lab17_19
                 }
             }
             fixDown(A, 0, size);
-            PrintArray1(A);
-            PrintArray2(A);
-            PrintArray3(value);
+            PrintFirstTable(A);
+            PrintSecondTable(A);
+            PrintThirdTable(value);
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)

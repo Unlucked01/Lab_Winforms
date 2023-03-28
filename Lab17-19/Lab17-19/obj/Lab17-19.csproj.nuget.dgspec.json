@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\egorunlucked\\source\\repos\\Lab17-19\\Lab17-19\\Lab17-19.csproj": {}
+    "C:\\Users\\Surface\\Source\\Repos\\Lab_Winforms\\Lab17-19\\Lab17-19\\Lab17-19.csproj": {}
   },
   "projects": {
-    "C:\\Users\\egorunlucked\\source\\repos\\Lab17-19\\Lab17-19\\Lab17-19.csproj": {
+    "C:\\Users\\Surface\\Source\\Repos\\Lab_Winforms\\Lab17-19\\Lab17-19\\Lab17-19.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egorunlucked\\source\\repos\\Lab17-19\\Lab17-19\\Lab17-19.csproj",
+        "projectUniqueName": "C:\\Users\\Surface\\Source\\Repos\\Lab_Winforms\\Lab17-19\\Lab17-19\\Lab17-19.csproj",
         "projectName": "Lab17-19",
-        "projectPath": "C:\\Users\\egorunlucked\\source\\repos\\Lab17-19\\Lab17-19\\Lab17-19.csproj",
-        "packagesPath": "C:\\Users\\egorunlucked\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egorunlucked\\source\\repos\\Lab17-19\\Lab17-19\\obj\\",
+        "projectPath": "C:\\Users\\Surface\\Source\\Repos\\Lab_Winforms\\Lab17-19\\Lab17-19\\Lab17-19.csproj",
+        "packagesPath": "C:\\Users\\Surface\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Surface\\Source\\Repos\\Lab_Winforms\\Lab17-19\\Lab17-19\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\egorunlucked\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Surface\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
